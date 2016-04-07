@@ -1,0 +1,20 @@
+{
+  "private": false,
+  "name": "termconv",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "convert xml 2 json",
+  "homepage": "https://github.com/mitselek/termconv",
+  "author": "Mihkel Putrinš <mihkel.putrinsh@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mitselek/termconv"
+  },
+  "bugs": {
+    "email": "mihkel.putrinsh@gmail.com",
+    "url": "https://github.com/mitselek/termconv/issues"
+  },
+  "dependencies": {
+    "xml2js": "^0.4.16"
+  }
+}
