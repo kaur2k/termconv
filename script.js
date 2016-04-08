@@ -30,14 +30,6 @@ fs.readFile('mili_mt.xml', 'utf16le', function(err, data) {
 
         client.bulk({ body: conceptGroupA })
 
-        // var json212 = conceptGroupA[100]
-        // console.log(JSON.stringify(json212, null, 4))
-        //
-        // var builder = new xml2js.Builder()
-        // var xml212 = builder.buildObject(json212)
-        // console.log(xml212)
-
-        // console.dir(result)
         console.log('Done')
     })
 })
