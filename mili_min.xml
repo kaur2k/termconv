@@ -1,0 +1,1893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mtf>
+  <conceptGrp>
+    <concept>6</concept>
+    <system type="entryClass">avalik</system>
+    <transacGrp>
+      <transac type="origination">super</transac>
+      <date>2003-04-14T22:19:22</date>
+    </transacGrp>
+    <transacGrp>
+      <transac type="modification">MPO</transac>
+      <date>2012-08-16T15:02:06</date>
+    </transacGrp>
+    <descripGrp>
+      <descrip type="Mõistetüüp">termin</descrip>
+    </descripGrp>
+    <descripGrp>
+      <descrip type="Valdkonnakood">
+        <xref Tlink="Valdkond:DK">DK</xref>
+      </descrip>
+    </descripGrp>
+    <languageGrp>
+      <language type="en" lang="EN-GB"/>
+      <termGrp>
+        <term>abeam replenishment</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">the transfer at sea of personnel and/or supplies by rigs between two or more ships proceeding side by side [<xref Tlink="Allikas:AAP-6">AAP-6</xref>]</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">HTM</transac>
+          <date>2003-10-02T17:30:21</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">HTM</transac>
+          <date>2003-10-02T17:30:21</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">02.10.2003</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="fr" lang="FR"/>
+      <termGrp>
+        <term>ravitaillement couple</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">HTM</transac>
+          <date>2003-10-02T17:30:21</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">HTM</transac>
+          <date>2003-10-02T17:30:21</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">02.10.2003</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="et" lang="ET"/>
+      <termGrp>
+        <term>pardastvarustamine</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">seadme abil toimuv isikkoosseisu ja/või varustuse saatmine aluselt alusele kahe või enama kõrvuti liikuva aluse vahel [AAP-6 tõlge]</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">HTM</transac>
+          <date>2003-10-02T17:30:21</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">MPO</transac>
+          <date>2011-05-25T09:56:45</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">25.05.2011</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+  </conceptGrp>
+  <conceptGrp>
+    <concept>8</concept>
+    <system type="entryClass">avalik</system>
+    <transacGrp>
+      <transac type="origination">super</transac>
+      <date>2003-04-14T22:19:22</date>
+    </transacGrp>
+    <transacGrp>
+      <transac type="modification">LPS</transac>
+      <date>2007-02-13T23:23:09</date>
+    </transacGrp>
+    <descripGrp>
+      <descrip type="Mõistetüüp">verbitüüpi</descrip>
+    </descripGrp>
+    <descripGrp>
+      <descrip type="Valdkonnakood">
+        <xref Tlink="Valdkond:IA">IA</xref>
+      </descrip>
+    </descripGrp>
+    <languageGrp>
+      <language type="en" lang="EN-GB"/>
+      <termGrp>
+        <term>abort</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>; <xref Tlink="Allikas:ADDR-ENEN">ADDR-ENEN</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">1. to terminate a mission for any reason other than enemy action. It may occur at any point after the beginning of the mission and prior to its completion. [<xref Tlink="Allikas:AAP-6">AAP-6</xref>]2. to discontinue aircraft take-off or missile launch [<xref Tlink="Allikas:AAP-6">AAP-6</xref>]</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">HTM</transac>
+          <date>2003-10-02T17:30:52</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">HTM</transac>
+          <date>2003-10-02T17:30:52</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">02.10.2003</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="fr" lang="FR"/>
+      <termGrp>
+        <term>avorter</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">HTM</transac>
+          <date>2003-10-02T17:30:52</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">HTM</transac>
+          <date>2003-10-02T17:30:52</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">02.10.2003</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="et" lang="ET"/>
+      <termGrp>
+        <term>katkestus</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">1. ükskõik mis põhjusel, välja arvatud vaenlase tegevus, lõpetamata ülesanne. Katkestus võib toimuda mis tahes hetkel pärast tegevuse algust ja enne selle lõppu [AAP-6 tõlge]2. õhuki või raketi starti poole pealt katkestama [AAP-6 tõlge]</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">HTM</transac>
+          <date>2003-10-02T17:30:52</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LPS</transac>
+          <date>2007-02-13T23:23:09</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">13.02.2007</descrip>
+        </descripGrp>
+      </termGrp>
+      <termGrp>
+        <term>katkestamine</term>
+        <transacGrp>
+          <transac type="origination">LPS</transac>
+          <date>2007-02-13T23:23:09</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LPS</transac>
+          <date>2007-02-13T23:23:09</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">13.02.2007</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+  </conceptGrp>
+  <conceptGrp>
+    <concept>14</concept>
+    <system type="entryClass">avalik</system>
+    <transacGrp>
+      <transac type="origination">super</transac>
+      <date>2003-04-14T22:19:22</date>
+    </transacGrp>
+    <transacGrp>
+      <transac type="modification">MPO</transac>
+      <date>2010-06-25T14:32:08</date>
+    </transacGrp>
+    <descripGrp>
+      <descrip type="Mõistetüüp">termin</descrip>
+    </descripGrp>
+    <descripGrp>
+      <descrip type="Valdkonnakood">
+        <xref Tlink="Valdkond:CA">CA</xref>
+      </descrip>
+    </descripGrp>
+    <languageGrp>
+      <language type="en" lang="EN-GB"/>
+      <termGrp>
+        <term>absolute height</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">the height of an aircraft directly above the surface or terrain over which it is flying [<xref Tlink="Allikas:AAP-6">AAP-6</xref>]</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Seotud">
+            <xref Tlink="en:altitude">altitude</xref>; <xref Tlink="en:altitude datum">altitude datum</xref>; <xref Tlink="en:barometric altitude">barometric altitude</xref>; <xref Tlink="en:calibrated altitude">calibrated altitude</xref>; <xref Tlink="en:critical altitude">critical altitude</xref>; <xref Tlink="en:cruising altitude">cruising altitude</xref>; <xref Tlink="en:cruising level">cruising level</xref>; <xref Tlink="en:datum level">datum level</xref>; <xref Tlink="en:drop altitude">drop altitude</xref>; <xref Tlink="en:height">height</xref>; <xref Tlink="en:high altitude">high altitude</xref>; <xref Tlink="en:minimum safe altitude">minimum safe altitude</xref>; <xref Tlink="en:pressure-altitude">pressure-altitude</xref>; <xref Tlink="en:transition altitude">transition altitude</xref>; <xref Tlink="en:transition level">transition level</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LAG</transac>
+          <date>2004-07-26T18:16:27</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LAG</transac>
+          <date>2004-07-26T18:16:27</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">26.07.2004</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="fr" lang="FR"/>
+      <termGrp>
+        <term>hauteur absolue</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LAG</transac>
+          <date>2004-07-26T18:16:27</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LAG</transac>
+          <date>2004-07-26T18:16:27</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">26.07.2004</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="et" lang="ET"/>
+      <termGrp>
+        <term>absoluutkõrgus</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">õhusõiduki kõrgus arvestatuna otse maa- või merepinnast, mille kohal see lendab [AAP-6 tõlge]</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LAG</transac>
+          <date>2004-07-26T18:16:27</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LAG</transac>
+          <date>2004-07-26T18:16:27</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Seotud">
+            <xref Tlink="et:kõrgus merepinnast">kõrgus merepinnast</xref>; <xref Tlink="et:kõrgusreferents">kõrgusreferents</xref>; <xref Tlink="et:baromeeterkõrgus">baromeeterkõrgus</xref>; <xref Tlink="et:parandatud kõrgus">parandatud kõrgus</xref>; <xref Tlink="et:kriitiline kõrgus">kriitiline kõrgus</xref>; <xref Tlink="et:lennukõrgus">lennukõrgus</xref>; <xref Tlink="et:reisitasand">reisitasand</xref>; <xref Tlink="et:referentstasand">referentstasand</xref>; <xref Tlink="et:lennupillukõrgus merepinnal">lennupillukõrgus merepinnal</xref>; kõrgus; <xref Tlink="et:suur kõrgus">suur kõrgus</xref>; <xref Tlink="et:minimaalne ohutuskõrgus merepinnast">minimaalne ohutuskõrgus merepinnast</xref>; <xref Tlink="et:samarõhkkõrgus">samarõhkkõrgus</xref>; <xref Tlink="et:üleminekukõrgus">üleminekukõrgus</xref>; <xref Tlink="et:üleminekutasand">üleminekutasand</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">26.07.2004</descrip>
+        </descripGrp>
+      </termGrp>
+      <termGrp>
+        <term>kõrgus</term>
+        <transacGrp>
+          <transac type="origination">LPS</transac>
+          <date>2006-03-15T12:03:04</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LPS</transac>
+          <date>2006-03-15T12:03:04</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Keelenditüüp">sünonüüm</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Märkus">tavakeeles [KOMISJON]</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">15.03.2006</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+  </conceptGrp>
+  <conceptGrp>
+    <concept>16</concept>
+    <system type="entryClass">avalik</system>
+    <transacGrp>
+      <transac type="origination">super</transac>
+      <date>2003-04-14T22:19:22</date>
+    </transacGrp>
+    <transacGrp>
+      <transac type="modification">MPO</transac>
+      <date>2015-01-09T18:21:50</date>
+    </transacGrp>
+    <descripGrp>
+      <descrip type="Mõistetüüp">termin</descrip>
+    </descripGrp>
+    <descripGrp>
+      <descrip type="Valdkonnakood">
+        <xref Tlink="Valdkond:EB">EB</xref>
+      </descrip>
+    </descripGrp>
+    <languageGrp>
+      <language type="en" lang="EN-GB"/>
+      <termGrp>
+        <term>absorbed dose</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>; <xref Tlink="Allikas:ADDR-ENEN">ADDR-ENEN</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">the amount of energy imparted by nuclear (or ionizing) radiation to unit mass of absorbing material. The unit is the rad. [<xref Tlink="Allikas:AAP-6">AAP-6</xref>]</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LAG</transac>
+          <date>2004-11-23T19:00:52</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LAG</transac>
+          <date>2004-11-23T19:00:52</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">23.11.2004</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="fr" lang="FR"/>
+      <termGrp>
+        <term>dose absorbée</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LAG</transac>
+          <date>2004-11-23T19:00:52</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LAG</transac>
+          <date>2004-11-23T19:00:52</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">23.11.2004</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="et" lang="ET"/>
+      <termGrp>
+        <term>neeldumisannus</term>
+        <transacGrp>
+          <transac type="origination">LAG</transac>
+          <date>2004-11-23T19:00:52</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">MPO</transac>
+          <date>2009-04-21T17:25:45</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">absorbeeriva materjali massiühikule antud tuuma- (või ioniseeriva) kiirguse energia hulk. Mõõtühik on raad. [AAP-6 tõlge]</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">21.04.2009</descrip>
+        </descripGrp>
+      </termGrp>
+      <termGrp>
+        <term>neeldumisdoos</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">sünonüüm</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LPS</transac>
+          <date>2005-10-26T15:34:12</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">MPO</transac>
+          <date>2009-04-21T17:25:45</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">21.04.2009</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+  </conceptGrp>
+  <conceptGrp>
+    <concept>18</concept>
+    <system type="entryClass">avalik</system>
+    <transacGrp>
+      <transac type="origination">super</transac>
+      <date>2003-04-14T22:19:22</date>
+    </transacGrp>
+    <transacGrp>
+      <transac type="modification">LPS</transac>
+      <date>2007-02-14T11:29:25</date>
+    </transacGrp>
+    <descripGrp>
+      <descrip type="Mõistetüüp">termin</descrip>
+    </descripGrp>
+    <descripGrp>
+      <descrip type="Valdkonnakood">
+        <xref Tlink="Valdkond:CB">CB</xref>
+      </descrip>
+    </descripGrp>
+    <languageGrp>
+      <language type="en" lang="EN-GB"/>
+      <termGrp>
+        <term>acceleration error</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">an error caused by the deflection of the vertical reference due to any change in acceleration of the aircraft [<xref Tlink="Allikas:AAP-6">AAP-6</xref>]</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LPS</transac>
+          <date>2006-07-28T15:45:15</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LPS</transac>
+          <date>2006-07-28T15:45:15</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">28.07.2006</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="fr" lang="FR"/>
+      <termGrp>
+        <term>erreur d'accélération</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LPS</transac>
+          <date>2006-07-28T15:45:15</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LPS</transac>
+          <date>2006-07-28T15:45:15</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">28.07.2006</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="et" lang="ET"/>
+      <termGrp>
+        <term>kiirendusviga</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">viga, mille põhjustab kõrgusenäidu moondumine õhuki kiirenduse muutumise korral [AAP-6 tõlge]</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LPS</transac>
+          <date>2006-07-28T15:45:15</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LPS</transac>
+          <date>2006-07-28T15:45:15</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">28.07.2006</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+  </conceptGrp>
+  <conceptGrp>
+    <concept>22</concept>
+    <system type="entryClass">avalik</system>
+    <transacGrp>
+      <transac type="origination">super</transac>
+      <date>2003-04-14T22:19:22</date>
+    </transacGrp>
+    <transacGrp>
+      <transac type="modification">MPO</transac>
+      <date>2010-01-26T18:12:02</date>
+    </transacGrp>
+    <descripGrp>
+      <descrip type="Mõistetüüp">termin</descrip>
+    </descripGrp>
+    <descripGrp>
+      <descrip type="Valdkonnakood">
+        <xref Tlink="Valdkond:JC">JC</xref>
+      </descrip>
+    </descripGrp>
+    <languageGrp>
+      <language type="en" lang="EN-GB"/>
+      <termGrp>
+        <term>acceptance trial</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">a trial carried out by nominated representatives of the eventual military users of the weapon or equipment to determine if the specified performance and characteristics have been met [AAP-6]</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LPS</transac>
+          <date>2007-02-01T16:22:20</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LPS</transac>
+          <date>2007-02-01T16:22:20</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Seotud">
+            <xref Tlink="en:consumer logistics">consumer logistics</xref>; <xref Tlink="en:production logistics">production logistics</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">01.02.2007</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="fr" lang="FR"/>
+      <termGrp>
+        <term>essai de recette</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LPS</transac>
+          <date>2007-02-01T16:22:20</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LPS</transac>
+          <date>2007-02-01T16:22:20</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">01.02.2007</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="et" lang="ET"/>
+      <termGrp>
+        <term>kõlblikkuskatse</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">relva või varustuse sõjaväelise lõppkasutaja määratud esindajate tehtav katsetus, mille eesmärk on teha kindlaks, kas relva või varustuse jõudlus ja omadused on nõuetekohased [AAP-6 tõlge]</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LPS</transac>
+          <date>2007-02-01T16:22:20</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">MPO</transac>
+          <date>2010-01-26T18:12:02</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">26.01.2010</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+  </conceptGrp>
+  <conceptGrp>
+    <concept>26</concept>
+    <system type="entryClass">avalik</system>
+    <transacGrp>
+      <transac type="origination">super</transac>
+      <date>2003-04-14T22:19:22</date>
+    </transacGrp>
+    <transacGrp>
+      <transac type="modification">MPO</transac>
+      <date>2009-05-07T17:06:04</date>
+    </transacGrp>
+    <descripGrp>
+      <descrip type="Mõistetüüp">termin</descrip>
+    </descripGrp>
+    <descripGrp>
+      <descrip type="Valdkonnakood">
+        <xref Tlink="Valdkond:BC">BC</xref>
+      </descrip>
+    </descripGrp>
+    <languageGrp>
+      <language type="en" lang="EN-GB"/>
+      <termGrp>
+        <term>accuracy of fire</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">the precision of fire expressed by the closeness of a grouping of shots at and around the centre of the target [<xref Tlink="Allikas:AAP-6">AAP-6</xref>]</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LPS</transac>
+          <date>2006-12-04T12:57:57</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LPS</transac>
+          <date>2006-12-04T12:57:57</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">04.12.2006</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="fr" lang="FR"/>
+      <termGrp>
+        <term>justesse de tir</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LPS</transac>
+          <date>2006-12-04T12:57:57</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LPS</transac>
+          <date>2006-12-04T12:57:57</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">04.12.2006</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="et" lang="ET"/>
+      <termGrp>
+        <term>tuletäpsus</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">tule tabamistäpsus, mida iseloomustab laskude hajumine sihtmärgi keskpunkti ümber [AAP-6 tõlge]</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LPS</transac>
+          <date>2006-12-04T12:57:57</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">MPO</transac>
+          <date>2009-05-07T17:06:04</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">07.05.2009</descrip>
+        </descripGrp>
+      </termGrp>
+      <termGrp>
+        <term>lasketäpsus</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">SOBIMATU</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">MPO</transac>
+          <date>2009-05-07T17:06:04</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">MPO</transac>
+          <date>2009-05-07T17:06:04</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:KVÜÕ-TERM">KVÜÕ-TERM</xref>; <xref Tlink="Allikas:NATO-MAPR">NATO-MAPR</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">07.05.2009</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+  </conceptGrp>
+  <conceptGrp>
+    <concept>28</concept>
+    <system type="entryClass">avalik</system>
+    <transacGrp>
+      <transac type="origination">super</transac>
+      <date>2003-04-14T22:19:22</date>
+    </transacGrp>
+    <transacGrp>
+      <transac type="modification">MPO</transac>
+      <date>2015-02-25T11:37:28</date>
+    </transacGrp>
+    <descripGrp>
+      <descrip type="Mõistetüüp">termin</descrip>
+    </descripGrp>
+    <descripGrp>
+      <descrip type="Valdkonnakood">
+        <xref Tlink="Valdkond:BH">BH</xref>; <xref Tlink="Valdkond:LC">LC</xref>
+      </descrip>
+    </descripGrp>
+    <languageGrp>
+      <language type="en" lang="EN-GB"/>
+      <termGrp>
+        <term>acknowledgement</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>; <xref Tlink="Allikas:KVÜÕ-1">KVÜÕ-1</xref>; <xref Tlink="Allikas:TER-PLUS">TER-PLUS</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">a message from the addressee informing the originator that his communication has been received and is understood [<xref Tlink="Allikas:AAP-6">AAP-6</xref>]</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">SES</transac>
+          <date>2004-04-02T12:35:26</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">SES</transac>
+          <date>2004-04-02T12:35:26</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">02.04.2004</descrip>
+        </descripGrp>
+      </termGrp>
+      <termGrp>
+        <term>acknowledgment</term>
+        <transacGrp>
+          <transac type="origination">MPO</transac>
+          <date>2015-02-25T11:35:30</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">MPO</transac>
+          <date>2015-02-25T11:35:30</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Keelenditüüp">variant</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:ADDR-ENEN">ADDR-ENEN</xref>; <xref Tlink="Allikas:TER-PLUS">TER-PLUS</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Kasutus">US</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">notification that a message has been received and understood [<xref Tlink="Allikas:ADDR-ENEN">ADDR-ENEN</xref>]</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">25.02.2015</descrip>
+        </descripGrp>
+      </termGrp>
+      <termGrp>
+        <term>ACK</term>
+        <transacGrp>
+          <transac type="origination">SES</transac>
+          <date>2004-11-16T16:51:38</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">SES</transac>
+          <date>2004-11-16T16:51:38</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Keelenditüüp">lühend</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:TER-PLUS">TER-PLUS</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">16.11.2004</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="fr" lang="FR"/>
+      <termGrp>
+        <term>aperçu</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">SES</transac>
+          <date>2004-04-02T12:35:26</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">SES</transac>
+          <date>2004-04-02T12:35:26</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">02.04.2004</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="et" lang="ET"/>
+      <termGrp>
+        <term>vastuvõtukinnitus</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">adressaadi teade sõnumi saatjale, mis kinnitab, et sõnum on kätte saadud ja selle sisu mõistetud [<xref Tlink="Allikas:AAP-6 tõlge">AAP-6 tõlge</xref>]</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">SES</transac>
+          <date>2004-04-02T12:35:26</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">SES</transac>
+          <date>2004-11-16T16:51:38</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">16.11.2004</descrip>
+        </descripGrp>
+      </termGrp>
+      <termGrp>
+        <term>teavitus</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">SOBIMATU</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">SES</transac>
+          <date>2004-11-16T16:51:38</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">SES</transac>
+          <date>2004-11-16T16:51:38</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">16.11.2004</descrip>
+        </descripGrp>
+      </termGrp>
+      <termGrp>
+        <term>vastuvõtmise kinnitamine</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">SOBIMATU</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">SES</transac>
+          <date>2004-11-16T16:51:38</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">SES</transac>
+          <date>2004-11-16T16:51:38</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:KVÜÕ-1">KVÜÕ-1</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">16.11.2004</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+  </conceptGrp>
+  <conceptGrp>
+    <concept>30</concept>
+    <system type="entryClass">avalik</system>
+    <transacGrp>
+      <transac type="origination">super</transac>
+      <date>2003-04-14T22:19:22</date>
+    </transacGrp>
+    <transacGrp>
+      <transac type="modification">LPS</transac>
+      <date>2007-01-11T22:48:44</date>
+    </transacGrp>
+    <descripGrp>
+      <descrip type="Mõistetüüp">termin</descrip>
+    </descripGrp>
+    <descripGrp>
+      <descrip type="Valdkonnakood">
+        <xref Tlink="Valdkond:LC">LC</xref>; <xref Tlink="Valdkond:HI1">HI1</xref>
+      </descrip>
+    </descripGrp>
+    <languageGrp>
+      <language type="en" lang="EN-GB"/>
+      <termGrp>
+        <term>acknowledgement signal</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">a signal sent to indicate that a message has been received properly [<xref Tlink="Allikas:AAP-6">AAP-6</xref>]</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LAG</transac>
+          <date>2004-12-25T22:19:05</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LAG</transac>
+          <date>2004-12-25T22:19:05</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">25.12.2004</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="fr" lang="FR"/>
+      <termGrp>
+        <term>signal d'accusé de réception</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LAG</transac>
+          <date>2004-12-25T22:19:05</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LAG</transac>
+          <date>2004-12-25T22:19:05</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">25.12.2004</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="et" lang="ET"/>
+      <termGrp>
+        <term>kinnitussignaal</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">signaal, millega näidatakse, et teade on vastu võetud [AAP-6 tõlge]</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LAG</transac>
+          <date>2004-12-25T22:19:05</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LPS</transac>
+          <date>2007-01-11T22:48:44</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">11.01.2007</descrip>
+        </descripGrp>
+      </termGrp>
+      <termGrp>
+        <term>teavitussignaal</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">SOBIMATU</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LPS</transac>
+          <date>2007-01-11T22:48:44</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LPS</transac>
+          <date>2007-01-11T22:48:44</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">11.01.2007</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+  </conceptGrp>
+  <conceptGrp>
+    <concept>34</concept>
+    <system type="entryClass">avalik</system>
+    <transacGrp>
+      <transac type="origination">super</transac>
+      <date>2003-04-14T22:19:22</date>
+    </transacGrp>
+    <transacGrp>
+      <transac type="modification">LPS</transac>
+      <date>2005-02-25T14:29:37</date>
+    </transacGrp>
+    <descripGrp>
+      <descrip type="Mõistetüüp">termin</descrip>
+    </descripGrp>
+    <descripGrp>
+      <descrip type="Valdkonnakood">
+        <xref Tlink="Valdkond:EL">EL</xref>; <xref Tlink="Valdkond:EM">EM</xref>; <xref Tlink="Valdkond:EN">EN</xref>
+      </descrip>
+    </descripGrp>
+    <languageGrp>
+      <language type="en" lang="EN-GB"/>
+      <termGrp>
+        <term>acoustic circuit</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">a circuit which responds to the acoustic field of a target [<xref Tlink="Allikas:AAP-6">AAP-6</xref>]</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Seotud">
+            <xref Tlink="en:mine">mine</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">MLR</transac>
+          <date>2003-12-09T10:08:26</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">MLR</transac>
+          <date>2003-12-09T10:08:26</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">09.12.2003</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="fr" lang="FR"/>
+      <termGrp>
+        <term>mise de feu acoustique</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">MLR</transac>
+          <date>2003-12-09T10:08:26</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">MLR</transac>
+          <date>2003-12-09T10:08:26</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">09.12.2003</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="et" lang="ET"/>
+      <termGrp>
+        <term>akustiline süüteahel</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">vooluahel, mis reageerib sihtmärgi akustilisele väljale [AAP-6 tõlge]</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Seotud">
+            <xref Tlink="et:miin">miin</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">MLR</transac>
+          <date>2003-12-09T10:08:26</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">MLR</transac>
+          <date>2003-12-09T10:08:26</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">09.12.2003</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+  </conceptGrp>
+  <conceptGrp>
+    <concept>36</concept>
+    <system type="entryClass">avalik</system>
+    <transacGrp>
+      <transac type="origination">super</transac>
+      <date>2003-04-14T22:19:22</date>
+    </transacGrp>
+    <transacGrp>
+      <transac type="modification">MPO</transac>
+      <date>2014-09-01T11:43:11</date>
+    </transacGrp>
+    <descripGrp>
+      <descrip type="Mõistetüüp">termin</descrip>
+    </descripGrp>
+    <descripGrp>
+      <descrip type="Valdkonnakood">
+        <xref Tlink="Valdkond:IO">IO</xref>
+      </descrip>
+    </descripGrp>
+    <languageGrp>
+      <language type="en" lang="EN-GB"/>
+      <termGrp>
+        <term>acoustic intelligence</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>; <xref Tlink="Allikas:NTMS">NTMS</xref>; <xref Tlink="Allikas:NATO-MAPR">NATO-MAPR</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">intelligence derived from acoustic signals or emissions [<xref Tlink="Allikas:AAP-6">AAP-6</xref>; NTMS]</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LAG</transac>
+          <date>2005-01-25T18:04:07</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LAG</transac>
+          <date>2005-01-25T18:04:07</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">25.01.2005</descrip>
+        </descripGrp>
+      </termGrp>
+      <termGrp>
+        <term>ACINT</term>
+        <transacGrp>
+          <transac type="origination">MPO</transac>
+          <date>2009-04-06T17:50:34</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">MPO</transac>
+          <date>2009-04-06T17:50:34</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Keelenditüüp">lühend</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>; <xref Tlink="Allikas:NTMS">NTMS</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Märkus">NATO Agreed 2014</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">06.04.2009</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="fr" lang="FR"/>
+      <termGrp>
+        <term>renseignement acoustique</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>; <xref Tlink="Allikas:NTMS">NTMS</xref>; <xref Tlink="Allikas:NATO-MAPR">NATO-MAPR</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LAG</transac>
+          <date>2005-01-25T18:04:07</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LAG</transac>
+          <date>2005-01-25T18:04:07</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">25.01.2005</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="et" lang="ET"/>
+      <termGrp>
+        <term>akustiline luure</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">akustiliste nähtuste kogumisel ja töötlemisel saadud luureandmed [AAP-6 tõlge]</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LAG</transac>
+          <date>2005-01-25T18:04:07</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LAG</transac>
+          <date>2005-01-25T18:04:07</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">25.01.2005</descrip>
+        </descripGrp>
+      </termGrp>
+      <termGrp>
+        <term>heliluure</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">SOBIMATU</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LPS</transac>
+          <date>2007-01-11T23:47:48</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LPS</transac>
+          <date>2007-01-11T23:47:48</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">11.01.2007</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+  </conceptGrp>
+  <conceptGrp>
+    <concept>38</concept>
+    <system type="entryClass">avalik</system>
+    <transacGrp>
+      <transac type="origination">super</transac>
+      <date>2003-04-14T22:19:22</date>
+    </transacGrp>
+    <transacGrp>
+      <transac type="modification">MPO</transac>
+      <date>2010-01-19T12:34:59</date>
+    </transacGrp>
+    <descripGrp>
+      <descrip type="Mõistetüüp">termin</descrip>
+    </descripGrp>
+    <descripGrp>
+      <descrip type="Valdkonnakood">
+        <xref Tlink="en:EN">EN</xref>
+      </descrip>
+    </descripGrp>
+    <languageGrp>
+      <language type="en" lang="EN-GB"/>
+      <termGrp>
+        <term>acoustic mine</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>; <xref Tlink="Allikas:NATO-MAPR">NATO-MAPR</xref>; <xref Tlink="Allikas:SÕJA-MAPR">SÕJA-MAPR</xref>; <xref Tlink="Allikas:SÕJA-VÄRK">SÕJA-VÄRK</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">a mine with an acoustic circuit which responds to the acoustic field of a ship or sweep [<xref Tlink="Allikas:AAP-6">AAP-6</xref>]</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Seotud">
+            <xref Tlink="en:mine">mine</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">MLR</transac>
+          <date>2003-11-24T17:10:09</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">MLR</transac>
+          <date>2003-11-24T17:10:09</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">24.11.2003</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="fr" lang="FR"/>
+      <termGrp>
+        <term>mine acoustique</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">MLR</transac>
+          <date>2003-11-24T17:10:09</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">MLR</transac>
+          <date>2003-11-24T17:10:09</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">24.11.2003</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="et" lang="ET"/>
+      <termGrp>
+        <term>akustiline miin</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">akustilise süüteahelaga miin, mis reageerib laeva või traali akustilisele väljale [<xref Tlink="Allikas:AAP-6">AAP-6</xref>]</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">MLR</transac>
+          <date>2003-11-24T17:10:09</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">MLR</transac>
+          <date>2003-11-24T17:10:09</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">24.11.2003</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+  </conceptGrp>
+  <conceptGrp>
+    <concept>40</concept>
+    <system type="entryClass">avalik</system>
+    <transacGrp>
+      <transac type="origination">super</transac>
+      <date>2003-04-14T22:19:22</date>
+    </transacGrp>
+    <transacGrp>
+      <transac type="modification">MLR</transac>
+      <date>2004-09-15T17:44:24</date>
+    </transacGrp>
+    <descripGrp>
+      <descrip type="Mõistetüüp">termin</descrip>
+    </descripGrp>
+    <descripGrp>
+      <descrip type="Valdkonnakood">
+        <xref Tlink="en:EN">EN</xref>
+      </descrip>
+    </descripGrp>
+    <languageGrp>
+      <language type="en" lang="EN-GB"/>
+      <termGrp>
+        <term>acoustic minehunting</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">the use of a sonar to detect mines or mine-like objects which may be on or protruding from the sea bed, or buried [<xref Tlink="Allikas:AAP-6">AAP-6</xref>]</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">MLR</transac>
+          <date>2003-11-24T17:10:55</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">MLR</transac>
+          <date>2003-11-24T17:10:55</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">24.11.2003</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="fr" lang="FR"/>
+      <termGrp>
+        <term>chasse aux mines acoustique</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">MLR</transac>
+          <date>2003-11-24T17:10:55</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">MLR</transac>
+          <date>2003-11-24T17:10:55</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">24.11.2003</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="et" lang="ET"/>
+      <termGrp>
+        <term>akustiline miinijahtimine</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Staatus">arutlusel</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">kajaloodi kasutamine merepõhjal lebavate või sellest esile tungivate või täielikult maetud miinide või miinisarnaste objektide avastamiseks [<xref Tlink="Allikas:AAP-6">AAP-6</xref>]</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">MLR</transac>
+          <date>2003-11-24T17:10:55</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">MLR</transac>
+          <date>2004-09-15T17:44:24</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">15.09.2004</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+  </conceptGrp>
+  <conceptGrp>
+    <concept>42</concept>
+    <system type="entryClass">avalik</system>
+    <transacGrp>
+      <transac type="origination">super</transac>
+      <date>2003-04-14T22:19:22</date>
+    </transacGrp>
+    <transacGrp>
+      <transac type="modification">MPO</transac>
+      <date>2009-05-19T16:05:37</date>
+    </transacGrp>
+    <descripGrp>
+      <descrip type="Mõistetüüp">termin</descrip>
+    </descripGrp>
+    <descripGrp>
+      <descrip type="Valdkonnakood">
+        <xref Tlink="Valdkond:DB">DB</xref>; <xref Tlink="Valdkond:DM">DM</xref>; <xref Tlink="Valdkond:IT">IT</xref>
+      </descrip>
+    </descripGrp>
+    <languageGrp>
+      <language type="en" lang="EN-GB"/>
+      <termGrp>
+        <term>acoustic warfare</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>; <xref Tlink="Allikas:NATO-MAPR">NATO-MAPR</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">in an underwater environment, the use of acoustic energy to provoke, exploit, restrict or prevent hostile use of the acoustic spectrum and the implementation of any measures taken to restrict its use to friendly forces [<xref Tlink="Allikas:AAP-6">AAP-6</xref>]</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Seotud">
+            <xref Tlink="en:acoustic warfare counter-countermeasures">acoustic warfare counter-countermeasures</xref>; <xref Tlink="en:acoustic warfare countermeasures">acoustic warfare countermeasures</xref>; <xref Tlink="en:acoustic warfare support measures">acoustic warfare support measures</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">KMU</transac>
+          <date>2003-10-13T17:29:56</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">KMU</transac>
+          <date>2003-10-13T17:29:56</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">13.10.2003</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="fr" lang="FR"/>
+      <termGrp>
+        <term>guerre acoustique</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>; <xref Tlink="Allikas:NATO-MAPR">NATO-MAPR</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">KMU</transac>
+          <date>2003-10-13T17:29:56</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">KMU</transac>
+          <date>2003-10-13T17:29:56</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">13.10.2003</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="et" lang="ET"/>
+      <termGrp>
+        <term>akustiline sõda</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">helienergia kasutamine veealuses keskkonnas, et provotseerida, ära kasutada, piirata või takistada helispektri kasutamist vaenlase poolt, ning vastumeetmete võtmine, et piirata taolist tegevust sõbralike jõudude vastu [AAP-6 tõlge]</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Seotud">
+            <xref Tlink="et:akustilise sõja vastu-vastumeetmed">akustilise sõja vastu-vastumeetmed</xref>; <xref Tlink="et:akustilise sõja vastumeetmed">akustilise sõja vastumeetmed</xref>; <xref Tlink="et:akustilise sõjapidamise toetusmeetmed">akustilise sõjapidamise toetusmeetmed</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">KMU</transac>
+          <date>2003-10-13T17:29:56</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LPS</transac>
+          <date>2005-03-03T13:02:04</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">03.03.2005</descrip>
+        </descripGrp>
+      </termGrp>
+      <termGrp>
+        <term>akustiliste vahendite lahinguline kasutamine</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">SOBIMATU</descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">LPS</transac>
+          <date>2005-03-03T13:02:04</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LPS</transac>
+          <date>2005-03-03T13:02:04</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">03.03.2005</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+  </conceptGrp>
+  <conceptGrp>
+    <concept>44</concept>
+    <system type="entryClass">avalik</system>
+    <transacGrp>
+      <transac type="origination">super</transac>
+      <date>2003-04-14T22:19:22</date>
+    </transacGrp>
+    <transacGrp>
+      <transac type="modification">SES</transac>
+      <date>2014-11-21T15:08:15</date>
+    </transacGrp>
+    <descripGrp>
+      <descrip type="Mõistetüüp">termin</descrip>
+    </descripGrp>
+    <descripGrp>
+      <descrip type="Valdkonnakood">
+        <xref Tlink="Valdkond:DB">DB</xref>; <xref Tlink="Valdkond:DM">DM</xref>; <xref Tlink="Valdkond:IT">IT</xref>
+      </descrip>
+    </descripGrp>
+    <languageGrp>
+      <language type="en" lang="EN-GB"/>
+      <termGrp>
+        <term>acoustic warfare counter-countermeasures</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">in an underwater environment, those actions taken to ensure effective friendly use of the acoustic spectrum by countering hostile acoustic warfare measures. Acoustic warfare counter-countermeasures involve anti-acoustic warfare support measures and anti-acoustic warfare countermeasures, and may not involve underwater acoustic emissions. [<xref Tlink="Allikas:AAP-6">AAP-6</xref>]</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Seotud">
+            <xref Tlink="en:acoustic warfare">acoustic warfare</xref>; <xref Tlink="en:acoustic warfare countermeasures">acoustic warfare countermeasures</xref>; <xref Tlink="en:acoustic warfare support measures">acoustic warfare support measures</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">KMU</transac>
+          <date>2003-10-13T17:32:35</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">KMU</transac>
+          <date>2003-10-13T17:32:35</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">13.10.2003</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="fr" lang="FR"/>
+      <termGrp>
+        <term>contre-contre-mesures de guerre acoustique</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">KMU</transac>
+          <date>2003-10-13T17:32:35</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">KMU</transac>
+          <date>2003-10-13T17:32:35</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">13.10.2003</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="et" lang="ET"/>
+      <termGrp>
+        <term>akustilise sõja vastu-vastumeetmed</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">meetmed, mida rakendatakse veealuses keskkonnas, et tagada helispektri tõhus kasutamine oma vägede poolt vastase akustilisele sõjale vastu töötades. Akustilise sõja topeltvastumeetmete hulka kuuluvad helisõja vastased toetusmeetmed ja akustilise sõja vastased vastumeetmed, kuid mitte veealused helisignaalid. [AAP-6 tõlge]</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Seotud">
+            <xref Tlink="et:akustiline sõda">akustiline sõda</xref>; <xref Tlink="et:akustilise sõja vastumeetmed">akustilise sõja vastumeetmed</xref>; <xref Tlink="et:akustilise sõjapidamise toetusmeetmed">akustilise sõjapidamise toetusmeetmed</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">KMU</transac>
+          <date>2003-10-13T17:32:35</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">LPS</transac>
+          <date>2005-03-03T13:36:04</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">03.03.2005</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+  </conceptGrp>
+  <conceptGrp>
+    <concept>46</concept>
+    <system type="entryClass">avalik</system>
+    <transacGrp>
+      <transac type="origination">super</transac>
+      <date>2003-04-14T22:19:22</date>
+    </transacGrp>
+    <transacGrp>
+      <transac type="modification">MPO</transac>
+      <date>2010-06-01T13:52:22</date>
+    </transacGrp>
+    <descripGrp>
+      <descrip type="Mõistetüüp">termin</descrip>
+    </descripGrp>
+    <descripGrp>
+      <descrip type="Valdkonnakood">
+        <xref Tlink="Valdkond:DB">DB</xref>; <xref Tlink="Valdkond:DM">DM</xref>
+      </descrip>
+    </descripGrp>
+    <languageGrp>
+      <language type="en" lang="EN-GB"/>
+      <termGrp>
+        <term>acoustic warfare support measures</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">in an underwater environment, actions taken to search for, intercept and identify radiated acoustic energy for the purpose of exploiting such radiation [<xref Tlink="Allikas:AAP-6">AAP-6</xref>]</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Seotud">
+            <xref Tlink="en:acoustic warfare">acoustic warfare</xref>; <xref Tlink="en:acoustic warfare countermeasures">acoustic warfare countermeasures</xref>; <xref Tlink="en:acoustic warfare counter-countermeasures">acoustic warfare counter-countermeasures</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">KMU</transac>
+          <date>2003-10-13T17:38:38</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">KMU</transac>
+          <date>2003-10-13T17:38:38</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Märkus">The use of these measures involves no intentional underwater acoustic emission and is generally not detectable by hostile forces. [AAP-6]</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">13.10.2003</descrip>
+        </descripGrp>
+      </termGrp>
+      <termGrp>
+        <term>AWSM</term>
+        <transacGrp>
+          <transac type="origination">MPO</transac>
+          <date>2009-04-06T17:54:31</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">MPO</transac>
+          <date>2009-04-06T17:54:31</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Keelenditüüp">lühend</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">06.04.2009</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="fr" lang="FR"/>
+      <termGrp>
+        <term>mesures de soutien de la guerre acoustique</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Allikaviide">
+            <xref Tlink="Allikas:AAP-6">AAP-6</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">KMU</transac>
+          <date>2003-10-13T17:38:38</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">KMU</transac>
+          <date>2003-10-13T17:38:38</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">13.10.2003</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+    <languageGrp>
+      <language type="et" lang="ET"/>
+      <termGrp>
+        <term>akustilise sõjapidamise toetusmeetmed</term>
+        <descripGrp>
+          <descrip type="Keelenditüüp">eelistermin</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Definitsioon">veealuses keskkonnas kiirguva helienergia otsimiseks, püüdmiseks ja tuvastamiseks kiirguse ärakasutamise eesmärgil rakendatavad meetmed [AAP-6 tõlge]</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Seotud">
+            <xref Tlink="et:akustiline sõda">akustiline sõda</xref>; <xref Tlink="et:akustilise sõja vastumeetmed">akustilise sõja vastumeetmed</xref>; <xref Tlink="et:akustilise sõja vastu-vastumeetmed">akustilise sõja vastu-vastumeetmed</xref>
+          </descrip>
+        </descripGrp>
+        <transacGrp>
+          <transac type="origination">KMU</transac>
+          <date>2003-10-13T17:38:38</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">MPO</transac>
+          <date>2010-03-29T17:35:26</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Märkus">Nende meetmete kasutamine ei hõlma kunstlikke veealuseid helisignaale ning ei ole vastase vägedele üldjuhul tuvastatav. [AAP-6 tõlge]</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">29.03.2010</descrip>
+        </descripGrp>
+      </termGrp>
+      <termGrp>
+        <term>akustilise võitluse toetusmeetmed</term>
+        <transacGrp>
+          <transac type="origination">MPO</transac>
+          <date>2010-03-29T17:35:26</date>
+        </transacGrp>
+        <transacGrp>
+          <transac type="modification">MPO</transac>
+          <date>2010-03-29T17:35:26</date>
+        </transacGrp>
+        <descripGrp>
+          <descrip type="Keelenditüüp">sünonüüm</descrip>
+        </descripGrp>
+        <descripGrp>
+          <descrip type="Kuupäev">29.03.2010</descrip>
+        </descripGrp>
+      </termGrp>
+    </languageGrp>
+  </conceptGrp>
+</mtf>

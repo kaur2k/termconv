@@ -1,0 +1,129 @@
+[
+    {
+        "name": "militerm",
+        "file": "mili_mt.xml",
+        "encoding": "utf16le",
+        "elementSelector": "conceptGrp",
+        "mappings": [
+            {
+                "sourceXpath": "concept",
+                "targetPath": [
+                    "id"
+                ],
+                "single": true
+            },
+            {
+                "sourceXpath": "system[@type='entryClass']",
+                "targetPath": [
+                    "entryClass"
+                ],
+                "single": true
+            },
+            {
+                "sourceXpath": "transacGrp/transac[@type='origination']",
+                "targetPath": [
+                    "origination",
+                    "by"
+                ],
+                "single": true
+            },
+            {
+                "sourceXpath": "transacGrp/transac[@type='origination']/../date",
+                "targetPath": [
+                    "origination",
+                    "at"
+                ],
+                "single": true
+            },
+            {
+                "sourceXpath": "transacGrp/transac[@type='modification']",
+                "targetPath": [
+                    "modification",
+                    "by"
+                ],
+                "single": true
+            },
+            {
+                "sourceXpath": "transacGrp/transac[@type='modification']/../date",
+                "targetPath": [
+                    "modification",
+                    "at"
+                ],
+                "single": true
+            },
+            {
+                "sourceXpath": "descripGrp/descrip[@type='Mõistetüüp']",
+                "targetPath": [
+                    "conceptType"
+                ]
+            },
+            {
+                "sourceXpath": "descripGrp/descrip[@type='Valdkonnakood']/xref",
+                "targetPath": [
+                    "valdkonnakood"
+                ]
+            },
+            {
+                "sourceXpath": "languageGrp/language[@type='et']/../termGrp",
+                "targetPath": [
+                    "term",
+                    "et"
+                ],
+                "mappings": [
+                    {
+                        "sourceXpath": "term",
+                        "targetPath": [
+                            "term"
+                        ],
+                        "single": true
+                    },
+                    {
+                        "sourceXpath": "descripGrp/descrip[@type='Keelenditüüp']",
+                        "targetPath": [
+                            "keelendityyp"
+                        ]
+                    },
+                    {
+                        "sourceXpath": "transacGrp/transac[@type='origination']",
+                        "targetPath": [
+                            "origination",
+                            "by"
+                        ],
+                        "single": true
+                    },
+                    {
+                        "sourceXpath": "transacGrp/transac[@type='origination']/../date",
+                        "targetPath": [
+                            "origination",
+                            "at"
+                        ],
+                        "single": true
+                    },
+                    {
+                        "sourceXpath": "transacGrp/transac[@type='modification']",
+                        "targetPath": [
+                            "modification",
+                            "by"
+                        ],
+                        "single": true
+                    },
+                    {
+                        "sourceXpath": "transacGrp/transac[@type='modification']/../date",
+                        "targetPath": [
+                            "modification",
+                            "at"
+                        ],
+                        "single": true
+                    },
+                    {
+                        "sourceXpath": "descripGrp/descrip[@type='Definitsioon']",
+                        "targetPath": [
+                            "definition"
+                        ],
+                        "single": true
+                    }
+                ]
+            }
+        ]
+    }
+]
