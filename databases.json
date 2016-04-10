@@ -1,5 +1,15 @@
 [
     {
+        "esIndex": {
+            "index" : "concepts",
+            "mappings" : {
+                "concept" : {
+                    "properties" : {
+                        "field1" : { "type" : "string", "index" : "not_analyzed" }
+                    }
+                }
+            }
+        },
         "name": "militerm",
         "file": "mili_mt.xml",
         "encoding": "utf16le",
@@ -7,119 +17,161 @@
         "mappings": [
             {
                 "sourceXpath": "concept",
-                "targetPath": [
-                    "id"
-                ],
+                "targetPath": [ "id" ],
                 "single": true
             },
             {
                 "sourceXpath": "system[@type='entryClass']",
-                "targetPath": [
-                    "entryClass"
-                ],
+                "targetPath": [ "entryClass" ],
                 "single": true
             },
             {
                 "sourceXpath": "transacGrp/transac[@type='origination']",
-                "targetPath": [
-                    "origination",
-                    "by"
-                ],
+                "targetPath": [ "origination", "by" ],
                 "single": true
             },
             {
                 "sourceXpath": "transacGrp/transac[@type='origination']/../date",
-                "targetPath": [
-                    "origination",
-                    "at"
-                ],
+                "targetPath": [ "origination", "at" ],
                 "single": true
             },
             {
                 "sourceXpath": "transacGrp/transac[@type='modification']",
-                "targetPath": [
-                    "modification",
-                    "by"
-                ],
+                "targetPath": [ "modification", "by" ],
                 "single": true
             },
             {
                 "sourceXpath": "transacGrp/transac[@type='modification']/../date",
-                "targetPath": [
-                    "modification",
-                    "at"
-                ],
+                "targetPath": [ "modification", "at" ],
                 "single": true
             },
             {
                 "sourceXpath": "descripGrp/descrip[@type='Mõistetüüp']",
-                "targetPath": [
-                    "conceptType"
-                ]
+                "targetPath": [ "conceptType" ]
             },
             {
                 "sourceXpath": "descripGrp/descrip[@type='Valdkonnakood']/xref",
-                "targetPath": [
-                    "valdkonnakood"
-                ]
+                "targetPath": [ "valdkonnakood" ]
             },
             {
                 "sourceXpath": "languageGrp/language[@type='et']/../termGrp",
-                "targetPath": [
-                    "term",
-                    "et"
-                ],
+                "targetPath": [ "terms" ],
                 "mappings": [
                     {
                         "sourceXpath": "term",
-                        "targetPath": [
-                            "term"
-                        ],
+                        "targetPath": [ "name" ],
+                        "targetValue": { "key": "languageCode", "value": "et" },
                         "single": true
                     },
                     {
                         "sourceXpath": "descripGrp/descrip[@type='Keelenditüüp']",
-                        "targetPath": [
-                            "keelendityyp"
-                        ]
+                        "targetPath": [ "keelendityyp" ]
                     },
                     {
                         "sourceXpath": "transacGrp/transac[@type='origination']",
-                        "targetPath": [
-                            "origination",
-                            "by"
-                        ],
+                        "targetPath": [ "origination", "by" ],
                         "single": true
                     },
                     {
                         "sourceXpath": "transacGrp/transac[@type='origination']/../date",
-                        "targetPath": [
-                            "origination",
-                            "at"
-                        ],
+                        "targetPath": [ "origination", "at" ],
                         "single": true
                     },
                     {
                         "sourceXpath": "transacGrp/transac[@type='modification']",
-                        "targetPath": [
-                            "modification",
-                            "by"
-                        ],
+                        "targetPath": [ "modification", "by" ],
                         "single": true
                     },
                     {
                         "sourceXpath": "transacGrp/transac[@type='modification']/../date",
-                        "targetPath": [
-                            "modification",
-                            "at"
-                        ],
+                        "targetPath": [ "modification", "at" ],
                         "single": true
                     },
                     {
                         "sourceXpath": "descripGrp/descrip[@type='Definitsioon']",
-                        "targetPath": [
-                            "definition"
-                        ],
+                        "targetPath": [ "definition" ],
+                        "single": true
+                    }
+                ]
+            },
+            {
+                "sourceXpath": "languageGrp/language[@type='en']/../termGrp",
+                "targetPath": [ "terms" ],
+                "mappings": [
+                    {
+                        "sourceXpath": "term",
+                        "targetPath": [ "name" ],
+                        "targetValue": { "key": "languageCode", "value": "en" },
+                        "single": true
+                    },
+                    {
+                        "sourceXpath": "descripGrp/descrip[@type='Keelenditüüp']",
+                        "targetPath": [ "keelendityyp" ]
+                    },
+                    {
+                        "sourceXpath": "transacGrp/transac[@type='origination']",
+                        "targetPath": [ "origination", "by" ],
+                        "single": true
+                    },
+                    {
+                        "sourceXpath": "transacGrp/transac[@type='origination']/../date",
+                        "targetPath": [ "origination", "at" ],
+                        "single": true
+                    },
+                    {
+                        "sourceXpath": "transacGrp/transac[@type='modification']",
+                        "targetPath": [ "modification", "by" ],
+                        "single": true
+                    },
+                    {
+                        "sourceXpath": "transacGrp/transac[@type='modification']/../date",
+                        "targetPath": [ "modification", "at" ],
+                        "single": true
+                    },
+                    {
+                        "sourceXpath": "descripGrp/descrip[@type='Definitsioon']",
+                        "targetPath": [ "definition" ],
+                        "single": true
+                    }
+                ]
+            },
+            {
+                "sourceXpath": "languageGrp/language[@type='fr']/../termGrp",
+                "targetPath": [ "terms" ],
+                "mappings": [
+                    {
+                        "sourceXpath": "term",
+                        "targetPath": [ "name" ],
+                        "targetValue": { "key": "languageCode", "value": "fr" },
+                        "single": true
+                    },
+                    {
+                        "sourceXpath": "descripGrp/descrip[@type='Keelenditüüp']",
+                        "targetPath": [ "keelendityyp" ]
+                    },
+                    {
+                        "sourceXpath": "transacGrp/transac[@type='origination']",
+                        "targetPath": [ "origination", "by" ],
+                        "single": true
+                    },
+                    {
+                        "sourceXpath": "transacGrp/transac[@type='origination']/../date",
+                        "targetPath": [ "origination", "at" ],
+                        "single": true
+                    },
+                    {
+                        "sourceXpath": "transacGrp/transac[@type='modification']",
+                        "targetPath": [ "modification", "by" ],
+                        "single": true
+                    },
+                    {
+                        "sourceXpath": "transacGrp/transac[@type='modification']/../date",
+                        "targetPath": [ "modification", "at" ],
+                        "single": true
+                    },
+                    {
+                        "sourceXpath": "descripGrp/descrip[@type='Definitsioon']",
+                        "targetPath": [ "definition" ],
                         "single": true
                     }
                 ]

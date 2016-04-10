@@ -16,17 +16,21 @@ function recurseMappings(mappings, sourceNode, targetNode) {
         if (!selected[0]) {
             return
         }
+        if (mapping.targetValue) {
+            op.set(targetNode, mapping.targetPath.slice(0,-1).concat(mapping.targetValue.key), mapping.targetValue.value)
+        }
         if (mapping.single === true) {
             op.set(targetNode, mapping.targetPath, selected[0].childNodes.item(0).nodeValue)
         }
         else {
             for (var j=0; j<selected.length; j++) {
                 if (mapping.mappings && mapping.mappings.length > 0) {
-                    op.set(targetNode, mapping.targetPath.concat(j), {})
-                    recurseMappings(mapping.mappings, selected[j], op.get(targetNode, mapping.targetPath.concat(j)))
+                    var newIndex = op.get(targetNode, mapping.targetPath, []).length
+                    op.set(targetNode, mapping.targetPath.concat(newIndex), {})
+                    recurseMappings(mapping.mappings, selected[j], op.get(targetNode, mapping.targetPath.concat(newIndex)))
                 }
                 else {
-                    op.set(targetNode, mapping.targetPath.concat(j), selected[j].childNodes.item(0).nodeValue)
+                    op.set(targetNode, mapping.targetPath.concat(newIndex), selected[j].childNodes.item(0).nodeValue)
                 }
             }
         }
@@ -40,7 +44,6 @@ function index_db(db) {
         }
 
         var doc = new dom().parseFromString(xml, 'text/xml')
-        // var nodes = xpath.select(db.elementSelector, doc)
         var sourceNodes = doc.getElementsByTagName(db.elementSelector)
         var targetNodes = []
 
@@ -50,8 +53,6 @@ function index_db(db) {
             targetNodes.push(targetNode)
             recurseMappings(db.mappings, sourceNode, targetNode)
         }
-        // console.log(JSON.stringify(targetNodes, null, 4))
-
         var bulk = []
         targetNodes.forEach(function(c) {
             bulk.push({ index: {
@@ -71,6 +72,5 @@ function index_db(db) {
 var databases = require('./databases.json')
 
 databases.forEach( function(db) {
-    // console.log('indexing', db)
     index_db(db)
 })
