@@ -24,8 +24,8 @@ function recurseMappings(mappings, sourceNode, targetNode) {
         }
         else {
             for (var j=0; j<selected.length; j++) {
+                var newIndex = op.get(targetNode, mapping.targetPath, []).length
                 if (mapping.mappings && mapping.mappings.length > 0) {
-                    var newIndex = op.get(targetNode, mapping.targetPath, []).length
                     op.set(targetNode, mapping.targetPath.concat(newIndex), {})
                     recurseMappings(mapping.mappings, selected[j], op.get(targetNode, mapping.targetPath.concat(newIndex)))
                 }
