@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ElasticUI Demo</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <script src="http://code.angularjs.org/1.2.16/angular.js"></script>
+    <script src="http://rawgit.com/YousefED/ElasticUI/master/examples/demo/lib/elasticsearch.angular.js"></script>
+    <script src="http://rawgit.com/YousefED/ElasticUI/master/examples/demo/lib/elastic.js"></script>
+    <script src="http://rawgit.com/YousefED/ElasticUI/master/dist/elasticui.min.js"></script>
+    <style>
+        .sidebar {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            z-index: 1000;
+            display: block;
+            padding: 20px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            background-color: #f5f5f5;
+            border-right: 1px solid #eee;
+        }
+
+        .instructions {
+            display: block;
+            margin: 0 auto;
+            width: 450px;
+        }
+    </style>
+    <script>
+        angular
+            .module('tutorial', ['elasticui'])
+            .constant('euiHost', 'http://localhost:9200'); // ACTION: change to cluster address
+    </script>
+</head>
+<body ng-app="tutorial" eui-index="'concepts'"><!-- ACTION: change to index name -->
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-xs-3 sidebar">
+                <h3>Search</h3>
+                <eui-searchbox field="'terms.name'"></eui-searchbox> <!-- ACTION: change to field to search on -->
+                <eui-singleselect field="'terms.languageCode'" size="10"></eui-singleselect> <!-- ACTION: change to field to use as facet -->
+                <h3>Mõistetüüp</h3>
+                <eui-singleselect field="'conceptType'" size="10"></eui-singleselect> <!-- ACTION: change to field to use as facet -->
+                <h3>Valdkonnakood</h3>
+                <eui-singleselect field="'valdkonnakood'" size="10"></eui-singleselect> <!-- ACTION: change to field to use as facet -->
+                <h3>Keelenditüüp</h3>
+                <eui-checklist field="'terms.keelendityyp'" size="15"></eui-checklist> <!-- ACTION: change to field to use as facet -->
+                <h3>Results Per Page</h3>
+                <select ng-model="indexVM.pageSize">
+                    <option ng-repeat="item in [10, 20, 50, 100]">{{item}}</option>
+                </select>
+            </div>
+            <div class="col-xs-9 col-xs-offset-3 main">
+                <h1><eui-simple-paging></eui-simple-paging></h1>
+                <ul>
+                    <li ng-repeat="doc in indexVM.results.hits.hits">
+                        <ul><b>{{doc._id}}</b> | <b>{{doc._source.valdkonnakood}}</b> <!-- OPTIONAL: display more meaningful data instead of json -->
+                            <li>et: {{doc._source.terms | filter : {'languageCode': 'et'} | json | limitTo: 500}}</li> <!-- OPTIONAL: display more meaningful data instead of json -->
+                            <li>en: {{doc._source.terms | filter : {'languageCode': 'en'} | json | limitTo: 500}}</li> <!-- OPTIONAL: display more meaningful data instead of json -->
+                            <li>fr: {{doc._source.terms | filter : {'languageCode': 'fr'} | json | limitTo: 500}}</li> <!-- OPTIONAL: display more meaningful data instead of json -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
