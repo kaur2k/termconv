@@ -1,8 +1,8 @@
 [
     {
         "name": "militerm",
-        "file": "mili_1.xml",
-        "encoding": "utf8",
+        "file": "mili_mt.xml",
+        "encoding": "utf16le",
         "elementSelector": "conceptGrp",
         "idSelector": "concept",
         "translateKeys": {
@@ -10,83 +10,19 @@
             "Valdkonnakood": "fieldCode",
             "Selgitus": "explanation"
         },
-        "collect": {
-            "conceptGrp": {
-                "mappings": [
-                    {
-                        "key": ["system", "$", "type"],
-                        "value": ["system", "$text"]
-                    }
-                ]
-            },
-            "transacGrp": {
-                "mappings": [
-                    {
-                        "key": ["transac", "$", "type"],
-                        "mappings": [
-                            {
-                                "key": "by",
-                                "value": ["transac", "$text"]
-                            },
-                            {
-                                "key": "at",
-                                "value": ["date"]
-                            }
-                        ]
-                    }
-                ]
-            },
-            "descripGrp": {
-                "mappings": [
-                    {
-                        "key": ["descrip", "$", "type"],
-                        "value": ["descrip", "$text"]
-                    }
-                ]
-            },
-            "languageGrp": {
-                "mappings": [
-                    {
-                        "key": "language",
-                        "mappings": [
-                            {
-                                "key": "languageType",
-                                "value": ["language", "$", "type"]
-                            },
-                            {
-                                "key": "languageCode",
-                                "value": ["language", "$", "lang"]
-                            }
-                        ]
-                    }
-                ]
-            },
-            "termGrp": {
-                "mappings": [
-                    {
-                        "key": "terms",
-                        "mappings": [
-                            {
-                                "key": "term",
-                                "value": ["term"]
-                            }
-                        ]
-                    }
-                ]
-            },
-            "xref": {
-                "key": "xref",
-                "mappings": [
-                    {
-                        "key": "xrefLink",
-                        "value": ["xref", "$", "Tlink"]
-                    },
-                    {
-                        "key": "xrefTitle",
-                        "value": ["xref", "$text"]
-                    }
-                ]
-            }
-        }
+        "collect": [ "conceptGrp","transacGrp","descripGrp","languageGrp","termGrp","xref" ]
+    },
+    {
+        "name": "esterm",
+        "file": "esterm_pub_source_fixed_result.xml",
+        "encoding": "utf16le",
+        "elementSelector": "conceptGrp",
+        "idSelector": "concept",
+        "translateKeys": {
+            "Mõistetüüp": "conceptType",
+            "Valdkonnakood": "fieldCode",
+            "Selgitus": "explanation"
+        },
+        "collect": [ "conceptGrp","transacGrp","descripGrp","languageGrp","termGrp","xref" ]
     }
 ]

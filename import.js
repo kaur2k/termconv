@@ -1,159 +1,169 @@
 var fs              = require('fs')
-// var elasticsearch   = require('elasticsearch')
 var op              = require('object-path')
-
-// var dom             = require('xmldom').DOMParser
-var util            = require('util')
 var XmlStream       = require('xml-stream')
+var elasticsearch   = require('elasticsearch')
+// var expat = require('node-expat')
 
-// var client = new elasticsearch.Client({
-//   host: 'localhost:9200'
-// })
+var client = new elasticsearch.Client({
+  host: 'localhost:9200'
+})
 
 var head = {
     index: "concepts",
     type: "concept"
 }
 
+function index_db(db, callback) {
 
+    function exists(object, path) {
+        // console.log('path:', path, 'in', Object.keys(object))
+        return op.get(object, path, false) !== false
+    }
 
-function recurseMappings(mappings, sourceNode, targetNode) {
-    mappings.forEach(function(mapping) {
-        var selected = xpath.select(mapping.sourceXpath, sourceNode)
-        if (!selected[0]) {
+    function mapTransac(transacIn) {
+        if (exists(transacIn, ['transac','$','type']) && exists(transacIn, ['transac','$text']) && exists(transacIn, ['date'])) {
+            var transacOut = [
+                {
+                    key: op.get(transacIn, ['transac','$','type']) + 'By',
+                    value: op.get(transacIn, ['transac','$text'])
+                },
+                {
+                    key: op.get(transacIn, ['transac','$','type']) + 'At',
+                    value: op.get(transacIn, ['date'])
+                }
+            ]
+        }
+        return transacOut
+    }
+
+    function mapXref(xrefIn) {
+        return xrefIn.map(function(a) {
+            return {
+                xrefText: op.get(a, ['$text']),
+                xrefLink: op.get(a, ['$','Tlink'])
+            }
+        })
+    }
+
+    function mapDescrip(descripIn) {
+        var descripOut = {}
+        if (!exists(descripIn, ['descrip','$','type'])) {
+            console.log('Description without type', JSON.stringify(descripIn, null, 4))
             return
         }
-        if (mapping.targetValue) {
-            op.set(targetNode, mapping.targetPath.slice(0,-1).concat(mapping.targetValue.key), mapping.targetValue.value)
+        descripOut.key = op.get(descripIn, ['descrip','$','type'])
+        if (exists(descripIn, ['descrip','xref'])) {
+            op.set(descripOut, ['value', 'descripLink'], mapXref(op.get(descripIn, ['descrip','xref'])))
         }
-        if (mapping.single === true) {
-            op.set(targetNode, mapping.targetPath, selected[0].childNodes.item(0).nodeValue)
-        }
-        else {
-            for (var j=0; j<selected.length; j++) {
-                var newIndex = op.get(targetNode, mapping.targetPath, []).length
-                if (mapping.mappings && mapping.mappings.length > 0) {
-                    op.set(targetNode, mapping.targetPath.concat(newIndex), {})
-                    recurseMappings(mapping.mappings, selected[j], op.get(targetNode, mapping.targetPath.concat(newIndex)))
-                }
-                else {
-                    op.set(targetNode, mapping.targetPath.concat(newIndex), selected[j].childNodes.item(0).nodeValue)
-                }
-            }
-        }
-    })
-}
-
-var mapRecCounter = 0
-
-function mapRec(mapped, selector, source, db) {
-    mapRecCounter ++
-    console.log('\nmapRec:', mapRecCounter, Object.keys(mapped), selector, Object.keys(source))
-
-    selector.mappings.forEach(function(mapping) {
-        console.log('Mapping:', JSON.stringify(mapping, null, 4))
-        var key = undefined
-        var value = undefined
-        var mapAsArray = false
-        if (mapping.key) {
-            if (typeof(mapping.key) === 'string') {
-                mapAsArray = true
-                key = mapping.key
-            }
-            else {
-                key = op.get(source, mapping.key)
-            }
-        }
-        if (mapping.value) {
-            if (typeof(mapping.value) === 'string') {
-                value = mapping.value
-            }
-            else {
-                value = op.get(source, mapping.value)
-            }
-        }
-        else if (mapping.mappings) {
-            value = {}
-            console.log('Mappings for ' + key + ':', mapping.mappings)
-            mapRec(value, mapping, source, db)
+        if (exists(descripIn, ['descrip','$text'])) {
+            op.set(descripOut, ['value', 'descripText'], op.get(descripIn, ['descrip','$text']))
         }
 
-        console.log('Set:', mapRecCounter, {key, value})
-        if (key && value) {
-            if (mapAsArray) {
-                op.push(mapped, key, value)
-            }
-            else {
-                op.set(mapped, key, value)
-            }
+        return descripOut
+    }
+
+    function mapTerm(termIn) {
+        // console.log('====', JSON.stringify(termIn, null, 4))
+        var termOut = {}
+        if (exists(termIn, ['term'])) {
+            op.set(termOut, ['term'], op.get(termIn, ['term']))
         }
-        else if (!value) {
-            console.log('Can\'t set value.')
-        }
-    })
-    console.log('==== '+JSON.stringify(source), Object.keys(source), Object.keys(db.collect))
-    Object.keys(source).forEach(function(sourceKey) {
-        if (Object.keys(db.collect).indexOf(sourceKey) > -1) {
-            console.log('Matched:', sourceKey)
-            source[sourceKey].forEach(function(a) {
-                console.log('\nTo mapRec:', Object.keys(mapped), sourceKey, Object.keys(a))
-                mapRec(mapped, db.collect[sourceKey], a, db)
+        op.get(termIn, ['transacGrp'], []).forEach(function(transac) {
+            mapTransac(transac).forEach(function(transac) {
+                op.set(termOut, transac.key, transac.value)
             })
-        }
-    })
-}
+        })
+        op.get(termIn, ['descripGrp'], []).forEach(function(descrip) {
+            // console.log("====1", JSON.stringify(descrip, null, 4))
+            var mappedDescrip = mapDescrip(descrip)
+            op.set(termOut, mappedDescrip.key, mappedDescrip.value)
+            // console.log('====3', JSON.stringify(termOut, null, 4))
+        })
 
-function index_db(db, callback) {
+        return termOut
+    }
+
+    function mapLanguage(languageIn) {
+        var languageOut = {}
+        if (exists(languageIn, ['language','$','type'])) {
+            op.set(languageOut, ['languageType'], op.get(languageIn, ['language','$','type']))
+        }
+        if (exists(languageIn, ['language','$','lang'])) {
+            op.set(languageOut, ['languageCode'], op.get(languageIn, ['language','$','lang']))
+        }
+        op.get(languageIn, ['termGrp'], []).forEach(function(term) {
+            var mappedTerm = mapTerm(term)
+            op.push(languageOut, ['terms'], mappedTerm)
+        })
+        return languageOut
+    }
+
+    var sourceStream = fs.createReadStream(db.file)
+    // var p = expat.createParser()
+    // sourceStream.pipe(p)
+    var xml = new XmlStream(sourceStream, db.encoding)
+    db.collect.forEach(function(a) { xml.collect(a) })
 
     console.log('Start import: ' + db.name)
 
-    var sourceStream = fs.createReadStream(db.file)
-    var xml = new XmlStream(sourceStream, db.encoding)
-
-    ;(function(db, xml) {
-        var elementCount = 0
-
-        Object.keys(db.collect).forEach(function(a) { xml.collect(a) })
-
-        xml.on('endElement: ' + db.elementSelector, function(source) {
-            elementCount ++
-            if (op.get(source, db.idSelector, false) === false) {
-                return callback({
-                    err: 'Element lacks ID',
-                    database: db.name,
-                    elementCounter: elementCount
-                }, { element: source, db: db })
-            }
-            // console.log(db.name, JSON.stringify(Object.keys(source), null, 4))
-
-            var mapped = {}
-            var selector = op.get(db, ['collect', db.elementSelector])
-            mapRec(mapped, selector, source, db)
-            var create = {
-                index: head.index,
-                type: head.type,
-                id: db.name + '_' + op.get(source, db.idSelector, '#' + elementCount),
-                body: mapped
-            }
-            console.log('--> Create:', JSON.stringify(create, null, 4))
-            // client.create(create, function(error, response) {
-            //     if (error) { return console.log(error) }
-            //     console.log('created', create, response)
-            // })
-            process.exit(0)
+    var elementCount = 0
+    xml.on('endElement: ' + db.elementSelector, function(source) {
+        elementCount ++
+        if (elementCount%100 === 0) {
+            console.log(new Date(), db.name, elementCount/100%10)
+        }
+        if (elementCount%1000 === 0) {
+            console.log(new Date(), db.name, elementCount, Math.round(process.memoryUsage().heapUsed/1024/1024, 2) + 'MB')
+            // xml.pause()
+            // setTimeout(function () { xml.resume() }, 100)
+        }
+        var create = {
+            index: head.index,
+            type: head.type,
+            body: {}
+        }
+        op.set(create, ['body','database'], db.name)
+        if (exists(source, [db.idSelector])) {
+            op.set(create, ['id'], db.name + '_' + op.get(source, [db.idSelector]))
+            op.set(create, ['body','id'], op.get(source, [db.idSelector]))
+        }
+        else { return callback('Missing ID', source) }
+        if (exists(source, ['system','$','type']) && exists(source, ['system','$text'])) {
+            op.set(create.body, op.get(source, ['system','$','type']), op.get(source, ['system','$text']))
+        }
+        op.get(source, ['transacGrp'], []).forEach(function(transac) {
+            mapTransac(transac).forEach(function(transac) {
+                op.set(create.body, transac.key, transac.value)
+            })
+        })
+        op.get(source, ['languageGrp'], []).forEach(function(language) {
+            var mappedLanguage = mapLanguage(language)
+            op.push(create.body, 'language', mappedLanguage)
         })
 
-        xml.on('end', function() {
-            return { msg: 'Finished ' + db.name }
+        // console.log('--> Create:', JSON.stringify(create, null, 4))
+        xml.pause()
+        client.create(create, function(error, response) {
+            xml.resume()
+            if (error) {
+                if (error.status === 409) {
+                    return callback('Warning: Skipping duplicate ID in ' + db.name, JSON.parse(error.body).id)
+                }
+                return callback(error)
+            }
         })
-    })(db, xml)
+    })
+
+    xml.on('end', function() {
+        return { msg: 'Finished ' + db.name }
+    })
 }
 
 var databases = require('./databases.json')
 
 databases.forEach( function(db) {
     index_db(db, function(err, result) {
-        if (err) { console.log('ERROR', err) }
+        if (err) { return console.log(err, result) }
         console.log(result)
     })
 })
