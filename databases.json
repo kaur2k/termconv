@@ -6,11 +6,16 @@
         "elementSelector": "conceptGrp",
         "idSelector": "concept",
         "translateKeys": {
+            "Allikaviide": "sourceReference",
+            "Definitsioon": "definition",
+            "Keelenditüüp": "--keelenditüüp--",
+            "Kuupäev": "date",
             "Mõistetüüp": "conceptType",
-            "Valdkonnakood": "fieldCode",
-            "Selgitus": "explanation"
-        },
-        "collect": [ "conceptGrp","transacGrp","descripGrp","languageGrp","termGrp","xref" ]
+            "Märkus": "comment",
+            "Selgitus": "explanation",
+            "Seotud": "related",
+            "Valdkonnakood": "fieldCode"
+        }
     },
     {
         "name": "esterm",
@@ -19,10 +24,15 @@
         "elementSelector": "conceptGrp",
         "idSelector": "concept",
         "translateKeys": {
+            "Allikaviide": "sourceReference",
+            "Definitsioon": "definition",
+            "Keelenditüüp": "--keelenditüüp--",
+            "Kuupäev": "date",
             "Mõistetüüp": "conceptType",
-            "Valdkonnakood": "fieldCode",
-            "Selgitus": "explanation"
-        },
-        "collect": [ "conceptGrp","transacGrp","descripGrp","languageGrp","termGrp","xref" ]
+            "Märkus": "comment",
+            "Selgitus": "explanation",
+            "Seotud": "related",
+            "Valdkonnakood": "fieldCode"
+        }
     }
 ]

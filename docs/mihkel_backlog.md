@@ -26,6 +26,7 @@
 - ...
     - Räägin EKRK'ga, minuarust on otstarbekas baase nende juures majutada
     - Räägin Mardiga - kui asjaosalised on nõus, siis kuidas näeks ta arendus- ja töökeskkondi EKRK serverites
-    - Lahendan impordi skripti mälupiirangud elegantselt, prognoos 2h, läks 2h
+    - Lahendan [impordi skripti mälupiirangud](https://github.com/kaur2k/termconv/issues/6) elegantselt, prognoos 2h, läks 2h
+        - selgus, et tuleb veelkord tehnoloogiat vahetada. Prognoos 2h, läks 16h
     - Õpin, mismoodi [elasticsearch täisteksti](https://github.com/kaur2k/termconv/issues/1) otsima panna (ja teen seda), prognoos 3h
-    - Kindlasti tuleb ka mäpper ümber seada, prognoos 2h
+    - Kindlasti tuleb ka mäpper ümber seada, prognoos 2h, läks 1h
