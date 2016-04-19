@@ -9,7 +9,7 @@ var client = new elasticsearch.Client({
 })
 
 var head = {
-    index: "testconcepts",
+    index: "concepts",
     type: "concept"
 }
 
