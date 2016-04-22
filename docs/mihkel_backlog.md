@@ -23,10 +23,12 @@
     - Katsetasime suuremate baaside importi - [tekkisid mäluprobleemid](https://github.com/kaur2k/termconv/issues/6)
     - Katsusime Kauri tööarvutisse arenduskeskkonda seadistada - [tõrge](https://github.com/kaur2k/termconv/issues/4)
 
-- ...
+- ... 4h
     - Räägin EKRK'ga, minuarust on otstarbekas baase nende juures majutada
     - Räägin Mardiga - kui asjaosalised on nõus, siis kuidas näeks ta arendus- ja töökeskkondi EKRK serverites
     - Lahendan [impordi skripti mälupiirangud](https://github.com/kaur2k/termconv/issues/6) elegantselt, prognoos 2h, läks 2h
-        - selgus, et tuleb veelkord tehnoloogiat vahetada. Prognoos 2h, läks 16h
-    - Õpin, mismoodi [elasticsearch täisteksti](https://github.com/kaur2k/termconv/issues/1) otsima panna (ja teen seda), prognoos 3h
+        - selgus, et tuleb veelkord tehnoloogiat vahetada. Prognoos 2h, läks 15h erinevate XML parserite tundmaõppimiseks ja 1h rakendamiseks
     - Kindlasti tuleb ka mäpper ümber seada, prognoos 2h, läks 1h
+
+...
+    - Õpin, mismoodi [elasticsearch täisteksti](https://github.com/kaur2k/termconv/issues/1) otsima panna (ja teen seda), prognoos 3h
