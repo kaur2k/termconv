@@ -2,11 +2,11 @@
 <html>
 <head>
     <title>ElasticUI Demo</title>
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
-    <script src="http://code.angularjs.org/1.2.16/angular.js"></script>
-    <script src="http://rawgit.com/YousefED/ElasticUI/master/examples/demo/lib/elasticsearch.angular.js"></script>
-    <script src="http://rawgit.com/YousefED/ElasticUI/master/examples/demo/lib/elastic.js"></script>
-    <script src="http://rawgit.com/YousefED/ElasticUI/master/dist/elasticui.min.js"></script>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+    <script src="lib/angular.js"></script>
+    <script src="lib/elasticsearch.angular.js"></script>
+    <script src="lib/elastic.js"></script>
+    <script src="lib/elasticui.min.js"></script>
     <style>
         .sidebar {
             position: fixed;
@@ -41,31 +41,41 @@
             <div class="col-xs-3 sidebar">
                 <h3>Search</h3>
                 <div>
-                    Term: <eui-searchbox field="'terms.name'"></eui-searchbox>
+                    Term: <eui-searchbox field="'language.terms.termName'"></eui-searchbox>
                 </div>
                 <div>
-                    Definition: <eui-searchbox field="'terms.definition'"></eui-searchbox>
+                    Definition: <eui-searchbox field="'language.terms.definition.descripText'"></eui-searchbox>
                 </div>
-                <eui-singleselect field="'terms.languageCode'" size="10"></eui-singleselect>
-                <h3>Mõistetüüp</h3>
-                <eui-singleselect field="'conceptType'" size="10"></eui-singleselect>
-                <h3>Valdkonnakood</h3>
-                <eui-singleselect field="'valdkonnakood'" size="10"></eui-singleselect>
+                <eui-checklist field="'database'" size="15"></eui-checklist>
+                <h3>languageCode</h3>
+                <eui-singleselect field="'language.languageCode'" size="10"></eui-singleselect>
+                <h3>languageType</h3>
+                <eui-singleselect field="'language.languageType'" size="10"></eui-singleselect>
                 <h3>Keelenditüüp</h3>
-                <eui-checklist field="'terms.keelendityyp'" size="15"></eui-checklist>
+                <eui-checklist field="'language.terms.--keelenditüüp--.descripText'" size="15"></eui-checklist>
+                <h3>entryClass</h3>
+                <eui-singleselect field="'entryClass'" size="10"></eui-singleselect>
+                <h3>descripLink</h3>
+                <eui-singleselect field="'language.terms.definition.descripLink.xrefText'" size="10"></eui-singleselect>
                 <h3>Results Per Page</h3>
                 <select ng-model="indexVM.pageSize">
                     <option ng-repeat="item in [10, 20, 50, 100]">{{item}}</option>
                 </select>
             </div>
             <div class="col-xs-9 col-xs-offset-3 main">
+                {{ indexVM.results.hits.total }} vastet
                 <h1><eui-simple-paging></eui-simple-paging></h1>
+
                 <ul>
                     <li ng-repeat="doc in indexVM.results.hits.hits">
                         <ul><b>{{doc._id}}</b> | <b>{{doc._source.valdkonnakood}}</b> <!-- OPTIONAL: display more meaningful data instead of json -->
-                            <li>et: {{doc._source.terms | filter : {'languageCode': 'et'} | json | limitTo: 5000}}</li> <!-- OPTIONAL: display more meaningful data instead of json -->
-                            <li>en: {{doc._source.terms | filter : {'languageCode': 'en'} | json | limitTo: 5000}}</li> <!-- OPTIONAL: display more meaningful data instead of json -->
-                            <li>fr: {{doc._source.terms | filter : {'languageCode': 'fr'} | json | limitTo: 5000}}</li> <!-- OPTIONAL: display more meaningful data instead of json -->
+                            <li>de: {{doc._source.language | filter : {'languageCode': 'de'} | json | limitTo: 500}}</li>
+                            <li>en: {{doc._source.language | filter : {'languageCode': 'en'} | json | limitTo: 500}}</li>
+                            <li>et: {{doc._source.language | filter : {'languageCode': 'et'} | json | limitTo: 500}}</li>
+                            <li>fi: {{doc._source.language | filter : {'languageCode': 'fi'} | json | limitTo: 500}}</li>
+                            <li>fr: {{doc._source.language | filter : {'languageCode': 'fr'} | json | limitTo: 500}}</li>
+                            <li>gb: {{doc._source.language | filter : {'languageCode': 'gb'} | json | limitTo: 500}}</li>
+                            <li>ru: {{doc._source.language | filter : {'languageCode': 'ru'} | json | limitTo: 500}}</li>
                         </ul>
                     </li>
                 </ul>
