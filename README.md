@@ -1,5 +1,18 @@
 # termconv
 
+## Import
+
+$ node import.js
+
+
+## Frontend
+
+start web server in termconv dir with  
+`$ python -m SimpleHTTPServer`
+
+start chrome with  
+`$ ChromeApplication --disable-web-security --user-data-dir=/path/to/termconv/ http://localhost:8000/search.html`
+
 
 ## Reporting Problems
 

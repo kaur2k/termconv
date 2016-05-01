@@ -8,7 +8,7 @@
         "translateKeys": {
             "Allikaviide": "sourceReference",
             "Definitsioon": "definition",
-            "Keelenditüüp": "--keelenditüüp--",
+            "Keelenditüüp": "termType",
             "Kuupäev": "date",
             "Mõistetüüp": "conceptType",
             "Märkus": "comment",
