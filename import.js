@@ -9,11 +9,12 @@ var client = new elasticsearch.Client({
 })
 
 var head = {
-    index: "concepts",
+    index: "test",
     type: "concept"
 }
 
-var terminateId = false
+var terminateId = "militerm_6"
+// var terminateId = false
 
 function index_db(db, callback) {
     var elementCount = 0
@@ -44,14 +45,14 @@ function index_db(db, callback) {
         close: function(name) {
             var key = op.get(tempNodes, elementStack.concat('descripKey'))
             op.del(tempNodes, elementStack.concat('descripKey'))
-            if (terminateId && terminateId === op.get(create, ['id'])) {
-                console.log({
-                    close:'descripGrp',
-                    key:key,
-                    path:elementStack.slice(0,-1).concat(key),
-                    value:op.get(tempNodes, elementStack)
-                })
-            }
+            // if (terminateId && terminateId === op.get(create, ['id'])) {
+            //     console.log({
+            //         close:'descripGrp',
+            //         key:key,
+            //         path:elementStack.slice(0,-1).concat(key),
+            //         value:op.get(tempNodes, elementStack)
+            //     })
+            // }
             op.set(tempNodes, elementStack.slice(0,-1).concat(key), op.get(tempNodes, elementStack))
         },
     }
@@ -59,68 +60,68 @@ function index_db(db, callback) {
         open: function(node) {},
         attribute: {
             type: function(value) {
-                if (terminateId && terminateId === op.get(create, ['id'])) {
-                    console.log({
-                        attr:'descrip.type',
-                        path:elementStack.slice(0,-1).concat('descripKey').join('.'),
-                        value:value
-                    })
-                }
+                // if (terminateId && terminateId === op.get(create, ['id'])) {
+                //     console.log({
+                //         attr:'descrip.type',
+                //         path:elementStack.slice(0,-1).concat('descripKey').join('.'),
+                //         value:value
+                //     })
+                // }
                 op.set(tempNodes, elementStack.slice(0,-1).concat('descripKey'), value)
             },
         },
         text: function(text) {
             // var key = op.get(tempNodes, elementStack.slice(0,-1).concat('descripKey'))
-            if (terminateId && terminateId === op.get(create, ['id'])) {
-                console.log({
-                    text:'descrip',
-                    path:elementStack.slice(0,-1).concat('descripText').join('.'),
-                    value:text
-                })
-            }
+            // if (terminateId && terminateId === op.get(create, ['id'])) {
+            //     console.log({
+            //         text:'descrip',
+            //         path:elementStack.slice(0,-1).concat('descripText').join('.'),
+            //         value:text
+            //     })
+            // }
             op.push(tempNodes, elementStack.slice(0,-1).concat('descripText'), text)
         },
         close: function(name) {
-            if (terminateId && terminateId === op.get(create, ['id'])) {
-                console.log({
-                    close:'descrip',
-                    value:name
-                })
-            }
+            // if (terminateId && terminateId === op.get(create, ['id'])) {
+            //     console.log({
+            //         close:'descrip',
+            //         value:name
+            //     })
+            // }
         },
     }
     parser['descripGrp.descrip.xref'] = {
         open: function(node) {},
         attribute: {
             Tlink: function(value) {
-                if (terminateId && terminateId === op.get(create, ['id'])) {
-                    console.log({
-                        attr:'xref.Tlink',
-                        path:elementStack.concat('xrefLink').join('.'),
-                        value:value
-                    })
-                }
+                // if (terminateId && terminateId === op.get(create, ['id'])) {
+                //     console.log({
+                //         attr:'xref.Tlink',
+                //         path:elementStack.concat('xrefLink').join('.'),
+                //         value:value
+                //     })
+                // }
                 op.set(tempNodes, elementStack.concat('xrefLink'), value)
             },
         },
         text: function(text) {
-            if (terminateId && terminateId === op.get(create, ['id'])) {
-                console.log({
-                    text:'xref',
-                    path:elementStack.concat('xrefText').join('.'),
-                    value:text
-                })
-            }
+            // if (terminateId && terminateId === op.get(create, ['id'])) {
+            //     console.log({
+            //         text:'xref',
+            //         path:elementStack.concat('xrefText').join('.'),
+            //         value:text
+            //     })
+            // }
             op.set(tempNodes, elementStack.concat('xrefText'), text)
         },
         close: function(name) {
-            if (terminateId && terminateId === op.get(create, ['id'])) {
-                console.log({
-                    close:'xref',
-                    path:elementStack.slice(0,-2).concat('descripLink').join('.'),
-                    value:op.get(tempNodes, elementStack)
-                })
-            }
+            // if (terminateId && terminateId === op.get(create, ['id'])) {
+            //     console.log({
+            //         close:'xref',
+            //         path:elementStack.slice(0,-2).concat('descripLink').join('.'),
+            //         value:op.get(tempNodes, elementStack)
+            //     })
+            // }
             op.push(tempNodes, elementStack.slice(0,-2).concat('descripLink'), op.get(tempNodes, elementStack))
         },
     }
@@ -293,7 +294,6 @@ function index_db(db, callback) {
     }
 
 
-
     console.log('Start import: ' + db.name)
 
     var sourceStream = fs.createReadStream(db.file, db.encoding)
@@ -309,13 +309,13 @@ function index_db(db, callback) {
             callback('Unmapped open:', { elementStack:elementPath, create:create, node:node })
         }
         if (terminateId && terminateId === op.get(create, ['id'])) {
-            console.log({ open:elementPath, node:node })
+            console.log('\n' + elementPath + ' open', { node:node })
         }
 
         var attributes = op.get(node, ['attributes'], {})
         Object.keys(attributes).forEach(function(key) {
             if (terminateId && terminateId === op.get(create, ['id'])) {
-                console.log('attribute for', node.name, attributes, key)
+                console.log('\n' + elementPath + ' attributes', { attributes:attributes })
             }
             var value = op.get(db, ['translateKeys', attributes[key]], attributes[key])
             try {
@@ -327,6 +327,9 @@ function index_db(db, callback) {
         })
     })
     saxStream.on('text', function(text) {
+        if (terminateId && terminateId === op.get(create, ['id'])) {
+            console.log('\n' + elementPath + ' text', { text:text })
+        }
         try {
             parser[elementPath].text(text)
         } catch (e) {
@@ -343,6 +346,9 @@ function index_db(db, callback) {
         } catch (e) {
             console.log(e)
             callback('Unmapped close:', { elementStack:elementPath, create:create, name:name })
+        }
+        if (terminateId && terminateId === op.get(create, ['id'])) {
+            console.log('\n' + elementPath + ' close', { closetag:name, node: op.get(tempNodes, elementStack) })
         }
         op.del(keyForText, [name])
         op.del(tempNodes, elementStack)
