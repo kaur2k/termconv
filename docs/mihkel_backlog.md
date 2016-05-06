@@ -29,7 +29,12 @@
         - selgus, et tuleb veelkord tehnoloogiat vahetada. Prognoos 2h, läks 15h erinevate XML parserite tundmaõppimiseks ja 1h rakendamiseks
     - Kindlasti tuleb ka mäpper ümber seada, prognoos 2h, läks 1h
 
-...
+- 2016-05-03
+    - Timmin veits visuaali, kuni Kaarel lõunaund teeb. 1h
+
+
+- 2016-05-06 Kauri juures, teemaks multitermi eksport, planeeritud 11:00-13:00, 2h; läks 12:15-16:15, 4h
+    - leiutasime meetodit ekspordi automatiseerimiseks.
 
 ...
     - Räägin Mardiga - kui asjaosalised on nõus, siis kuidas näeks ta arendus- ja töökeskkondi EKRK serverites

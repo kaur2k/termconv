@@ -13,8 +13,8 @@ var head = {
     type: "concept"
 }
 
-var terminateId = "militerm_6"
-// var terminateId = false
+// var terminateId = "militerm_6"
+var terminateId = false
 
 function index_db(db, callback) {
     var elementCount = 0
@@ -302,6 +302,7 @@ function index_db(db, callback) {
     saxStream.on('opentag', function(node) {
         elementStack.push(node.name)
         elementPath = elementStack.join('.')
+        console.log('\n' + elementPath + ' open', { node:node.name })
         try {
             parser[elementPath].open(node)
         } catch (e) {
