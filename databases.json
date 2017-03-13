@@ -2,7 +2,7 @@
     {
         "name": "militerm",
         "file": "mili_mt.xml",
-        "encoding": "utf16le",
+        "encoding": "utf8",
         "elementSelector": "conceptGrp",
         "idSelector": "concept",
         "translateKeys": {
